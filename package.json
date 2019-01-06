@@ -1,0 +1,37 @@
+{
+  "name": "JTBsite",
+  "version": "1.0.0",
+  "description": "Joeys Toy Box website. A charity organization for sick children",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thomas Doolittle",
+  "license": "ISC",
+  "dependencies": {
+    "aload": "^1.2.2",
+    "ejs": "^2.5.1",
+    "express": "^4.14.0",
+    "express-content-length-validator": "^1.0.0",
+    "express-partials": "^0.3.0",
+    "fb": "^1.1.1",
+    "helmet": "^2.3.0",
+    "https": "^1.0.0",
+    "morgan": "^1.7.0",
+    "node-env-file": "^0.1.8",
+    "path": "^0.12.7",
+    "paypal-rest-sdk": "^1.6.9",
+    "serve-favicon": "^2.3.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-retire": "^1.0.3",
+    "grunt-sass": "^1.2.1",
+    "grunt-wiredep": "^3.0.1",
+    "npm-check-updates": "^2.8.0"
+  }
+}

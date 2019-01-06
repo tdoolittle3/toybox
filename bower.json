@@ -1,0 +1,24 @@
+{
+  "name": "JTBsite",
+  "description": "Joeys Toy Box website. A charity organization for sick children",
+  "main": "index.js",
+  "authors": [
+    "Thomas Doolittle"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.7",
+    "scrolly": "^0.6.2",
+    "typed.js": "^1.1.4"
+  }
+}
