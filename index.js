@@ -6,7 +6,7 @@ var contentLength = require('express-content-length-validator');
 var helmet = require('helmet');
 var http = require('https');
 var favicon = require('serve-favicon');
-var fb = require('fb');
+//var fb = require('fb');
 var logger = require('morgan');
 var partials = require('express-partials');
 //var paypal = require('paypal-rest-sdk');
@@ -30,25 +30,18 @@ app.use(favicon(path.join(__dirname, 'public','img','favicon.ico')));
 app.use(helmet());
 app.use(partials());
 
-/*
-paypal.configure({
-  'mode': 'sandbox', //sandbox or live
-  'client_id': 'EBWKjlELKMYqRNQ6sYvFo64FtaRLRR5BdHEESmha49TM',
-  'client_secret': 'EO422dn3gQLgDbuwqTjzrFgFtaRLRR5BdHEESmha49TM'
-});
-*/
 var pageData = {};
 
 pageData.separators = ['about_background.jpg', 'books.jpg', 'sunshine.jpg'];
-pageData.APP_ID = process.env.APP_ID;
-pageData.FB_PAGE_ID = process.env.FB_PAGE_ID;
-var FB = new fb.Facebook();
+//pageData.APP_ID = process.env.APP_ID;
+//pageData.FB_PAGE_ID = process.env.FB_PAGE_ID;
+//var FB = new fb.Facebook();
 
 var hours = 3600 * 1000;
 var pageUpdateInterval = 24 * hours;
-getFBPageFeed();
-setInterval(getFBPageFeed, pageUpdateInterval);
-
+//getFBPageFeed();
+//setInterval(getFBPageFeed, pageUpdateInterval);
+/*
 function getFBPageFeed() {
 	console.log("Uploading latest feed from Facebook...");
 	FB.api('oauth/access_token', {
@@ -67,13 +60,15 @@ function getFBPageFeed() {
 	    loadPageFeed();
 	});
 }
+*/
+/*
 function loadPageFeed() {
 	FB.api('/'+process.env.FB_PAGE_ID+'/feed', function(res) {
 		if (!res || res.error) {
 			console.log(!res ? 'error occurred' : res.error);
 			return;
 		}
-  		console.log("Newsfeed: ",res);
+  		//console.log("Newsfeed: ",res);
   		pageData.newsFeed = res;
 		_.each(pageData.newsFeed.data, function(data, index, list) {
 			if (_.has(data, 'id')) {
@@ -104,7 +99,7 @@ function loadPageFeed() {
 			return;
 		}
 		
-		console.log("EVENTS: ", res);
+		//console.log("EVENTS: ", res);
 		if (_.has(res, 'data')) {
 			pageData.eventFeed = res;
 			_.each(pageData.eventFeed.data, function(data, index, list) {
@@ -145,7 +140,7 @@ function loadPageFeed() {
 	});
 
 }
-
+*/
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });

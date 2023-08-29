@@ -67,60 +67,13 @@ function statusChangeCallback(response) {
         });
       }
 */
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '681330212030768',
-          xfbml      : true,
-          version    : 'v2.7',
-        });
-
-        //console.log("Starting login status check")
-        FB.getLoginStatus(function(response) {
-            //statusChangeCallback(response);
-            console.log("login status: " + JSON.stringify(response));
-            if (response && !response.error) {
-                loadPageFeed(response.accessToken);
-                testAPI(response.accessToken);
-            }
-        });
+      
 
 
       //  loadPageFeed(null);
-      };
+      
 
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "http://connect.facebook.net/en_US/all.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-
-
-      function loadPageFeed(accessToken) {
-        console.log("Starting FaceBook page feed query.")
-        FB.api(
-            "/205674119456461/feed",
-            function (response) {
-                if (response && !response.error) {
-                    console.log("Response: ", JSON.stringify(response));
-                } else {
-                    console.log("Error: ", response.error);
-                }
-            }
-        );        
-      }
-
-// Here we run a very simple test of the Graph API after login is
-  // successful.  See statusChangeCallback() for when this call is made.
-  function testAPI(accessToken) {
-    console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me?access_token='+accessToken, function(response) {
-      console.log('Successful login for: ' + JSON.stringify(response));
-      //document.getElementById('status').innerHTML =
-      //  'Thanks for logging in, ' + response.name + '!';
-    });
-  }
+    
 
     </script>
     
