@@ -1,8 +1,0 @@
-Heroku
-Mooch!@513
-
-
-grunt watch
-heroku local web - runs from localhost
-
-Godaddy A record 184.168.221.18
