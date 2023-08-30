@@ -30,6 +30,7 @@ const Main = () => {
               Based out of Atlanta, we support metro-area hospitals by delivering
               items like movies, video games, toys, and gift cards.
             </Typography>
+            <br/>
             <Typography variant='body1'><strong>100% of all donations</strong> go directly into supporting families confronted
               by childhood illness.</Typography>
           </Paper>
@@ -69,7 +70,7 @@ const Main = () => {
         <Grid item xs={12}>
           <Paper style={{ padding: '20px', textAlign: 'center' }}>
             <Typography variant='h3'>About us</Typography>
-            <img src="img/joey.jpg" height={450} alt='Joey Doolittle' />
+            <img src="img/joey.jpg" height={450} alt='Joey Doolittle' style={{width:'100%', height:'100%', objectFit:'cover'}} />
 
             <Typography variant='body1'>JTB was founded by our son, Joey Doolittle.  Joey was a lifelong cancer warrior who was diagnosed with Rhabdomyosarcoma at only 3 months of age.
               Throughout Joey's life, he underwent numerous chemotherapy protocols, surgeries, and radiation treatments.
@@ -78,6 +79,7 @@ const Main = () => {
               On June 7, 2008, Joey raised $1,800 by organizing a "cycle-a-thon" at a local gym in Peachtree City, GA.
               A few days later, Joey made his first and only delivery of toys to the AFLAC Children's Cancer Center at Scottish Rite hospital in Atlanta.
               On July 4, 2008, after a lifetime battle against cancer, Joey peacefully passed away in his mother's arms.</Typography>
+            <br/>
             <Typography variant='body1'>
               Joey's impact on his family, friends, and other childhood cancer patients continues to evolve and flourish.  His simple dream of helping the other kids and their families continues to live on because of the incredible community of volunteers that have felt Joey in their hearts.  With no paid employees, we are a 100% volunteer army dedicated to the JTB mission.  We operate this way so that we can put every dollar towards helping these kids and their families.  We have dedicated ourselves to being good stewards of the money, time, and efforts of our volunteer community.  We will continue Joey's mission with the compassion and integrity that he had when he started it... simple as that.
             </Typography>

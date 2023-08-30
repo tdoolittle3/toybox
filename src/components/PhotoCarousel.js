@@ -21,7 +21,7 @@ const PhotoCarousel = ({ images }) => {
             >
                 {images.map((image, index) => (
                     <div key={index}>
-                        <img src={image} alt={`Slide ${index}`} />
+                        <img src={image} alt={`Slide ${index}`} style={{width:'100%', height:'100%', objectFit:'cover'}}/>
                     </div>
                 ))}
             </Carousel>
