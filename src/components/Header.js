@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <AppBar position="static">
       <Toolbar style={{ display: 'flex', justifyContent: 'center', padding: '5px' }}>
-        <img src='img/main_logo.svg' height={150} />
+        <img src='img/main_logo.svg' alt='Joeys Toy Box Main Logo' height={150} />
         <Typography variant="h6"><TypedComponent /></Typography>
       </Toolbar>
     </AppBar>

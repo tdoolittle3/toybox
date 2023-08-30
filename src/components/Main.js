@@ -3,7 +3,7 @@
 import React from 'react';
 import PhotoCarousel from './PhotoCarousel';
 import { Container } from '@mui/material';
-import { Grid, Card, CardContent, Typography, Paper } from '@mui/material';
+import { Grid, Typography, Paper } from '@mui/material';
 
 const Main = () => {
   const images = [

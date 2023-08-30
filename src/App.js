@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Container, Grid, ThemeProvider } from '@mui/material';
+import { ThemeProvider } from '@mui/material';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
