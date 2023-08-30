@@ -11,12 +11,15 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
 
-      <div className="App gradient-background">
-        <Header />    
+      <div className="App gradient-background" >
+
+        <Header />
+
         <Main />
 
-        <Footer />
       </div>
+      <Footer />
+
     </ThemeProvider>
 
   );

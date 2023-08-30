@@ -2,8 +2,7 @@
 
 import React from 'react';
 import PhotoCarousel from './PhotoCarousel';
-import { Container } from '@mui/material';
-import { Grid, Typography, Paper } from '@mui/material';
+import { Grid, Typography, Paper, Container } from '@mui/material';
 
 const Main = () => {
   const images = [
@@ -13,9 +12,8 @@ const Main = () => {
   ];
   return (
 
-    <Container maxWidth="lg" style={{ maxHeight: '100%'}}>
-
-      <Grid container spacing={2} style={{ margin: '8px 0px' }}>
+<Container>
+      <Grid container maxWidth={'lg'} spacing={2} justifyContent={'center'} style={{ padding: '8px 0px', placeContent:'center', display: 'center' }}>
         <Grid item xs={12} lg={6}>
           <Paper style={{ padding: '20px', textAlign: 'center', height: '100%' }}>
             <PhotoCarousel images={images} />
@@ -77,8 +75,7 @@ const Main = () => {
           </Paper>
         </Grid>
       </Grid>
-
-    </Container>
+</Container>
 
 
   );
