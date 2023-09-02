@@ -70,7 +70,7 @@ const Main = () => {
         <Grid item xs={12}>
           <Paper style={{ padding: '20px', textAlign: 'center' }}>
             <Typography variant='h3'>About us</Typography>
-            <img src="img/joey.jpg" height={450} alt='Joey Doolittle' style={{width:'100%', height:'100%', objectFit:'cover'}} />
+            <img src="img/joey.jpg" height={450} alt='Joey Doolittle' style={{width:'100%', height:'100%', objectFit:'contain', scale:'0.5'}} />
 
             <Typography variant='body1'>JTB was founded by our son, Joey Doolittle.  Joey was a lifelong cancer warrior who was diagnosed with Rhabdomyosarcoma at only 3 months of age.
               Throughout Joey's life, he underwent numerous chemotherapy protocols, surgeries, and radiation treatments.
