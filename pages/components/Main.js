@@ -5,6 +5,9 @@ import PhotoCarousel from './PhotoCarousel';
 import { Grid, Typography, Paper, Container } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart, faGift, faThumbsUp } from '@fortawesome/free-solid-svg-icons'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
 
 const Main = () => {
   const images = [
@@ -50,7 +53,7 @@ const Main = () => {
           <Paper style={{ height: '100%', padding: '20px' }}>
 
             <Typography variant="h6">Charity</Typography>
-            <FontAwesomeIcon icon={faGift} size='xl' color='#23bf5a' style={{ fontSize: '3em' }} />
+            <FontAwesomeIcon icon={faGift} size='xs' color='#23bf5a' style={{ fontSize: '3em' }} />
             <Typography variant="body1">Donations go directly to items like toys, movies, and video games for pediatric oncology centers to give to patients. We also give out things like gift cards and vouchers for entertainment and family outings.</Typography>
 
           </Paper>
@@ -59,7 +62,7 @@ const Main = () => {
           <Paper style={{ height: '100%', padding: '20px' }}>
 
             <Typography variant="h6">Community</Typography>
-            <FontAwesomeIcon icon={faThumbsUp} size='xl' color='#f7e30e' style={{ fontSize: '3em' }} />
+            <FontAwesomeIcon icon={faThumbsUp} size='m' color='#f7e30e' style={{ fontSize: '3em' }} />
             <Typography variant="body1">We hold motorcycle rides, brunches, auctions, and other events each year. Everything we do comes with the help and support of local businesses and community organizations that we appreciate so much.</Typography>
 
           </Paper>

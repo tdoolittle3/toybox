@@ -1,4 +1,4 @@
-// src/components/TypedText.js
+'use client'
 
 import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';

@@ -1,4 +1,4 @@
-// src/components/PhotoCarousel.js
+'use client'
 
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
