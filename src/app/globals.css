@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+}
+
+
+/* src/App.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+}
+
+.gradient-background {
+  background: -webkit-gradient(linear, left top , right bottom, 
+  color-stop(0%,#fff), 
+  color-stop(40%,#53cbf1), color-stop(100%,#05abe0));
+}
+
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* To make sure the container takes up the full height of the parent */
+}
+
+.slogan {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin: 20px;
+}
+
+.slogan::before,
+.slogan::after {
+  content: '"';
+  color: #999;
+}
+
+.slogan::before {
+  margin-right: 5px;
+}
+
+.slogan::after {
+  margin-left: 5px;
+}

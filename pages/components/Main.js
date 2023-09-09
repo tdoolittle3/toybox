@@ -2,6 +2,7 @@
 
 import React from 'react';
 import PhotoCarousel from './PhotoCarousel';
+import Image from 'next/image';
 import { Grid, Typography, Paper, Container } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart, faGift, faThumbsUp } from '@fortawesome/free-solid-svg-icons'
@@ -11,9 +12,9 @@ config.autoAddCss = false
 
 const Main = () => {
   const images = [
-    'img/cancer_center_joey.jpg',
-    'img/jtbcrew.jpg',
-    'img/toys.jpg'
+    '/img/cancer_center_joey.jpg',
+    '/img/jtbcrew.jpg',
+    '/img/toys.jpg'
   ];
   return (
 
@@ -44,7 +45,7 @@ const Main = () => {
           <Paper style={{ height: '100%', padding: '20px' }}>
 
             <Typography variant="h6">Compassion</Typography>
-            <FontAwesomeIcon icon={faHeart} size='xl' color='#d83a50' style={{ fontSize: '3em' }} />
+            <FontAwesomeIcon icon={faHeart} size='lg' color='#d83a50' style={{ fontSize: '3em' }} />
             <Typography variant="body1">We work with families, hospitals and other charitable organizations to provide toys to kids undergoing intensive medical treatments. We know the positive impact simple comforts can make in tough times.</Typography>
 
           </Paper>
@@ -53,7 +54,7 @@ const Main = () => {
           <Paper style={{ height: '100%', padding: '20px' }}>
 
             <Typography variant="h6">Charity</Typography>
-            <FontAwesomeIcon icon={faGift} size='xs' color='#23bf5a' style={{ fontSize: '3em' }} />
+            <FontAwesomeIcon icon={faGift} size='lg' color='#23bf5a' style={{ fontSize: '3em' }} />
             <Typography variant="body1">Donations go directly to items like toys, movies, and video games for pediatric oncology centers to give to patients. We also give out things like gift cards and vouchers for entertainment and family outings.</Typography>
 
           </Paper>
@@ -62,7 +63,7 @@ const Main = () => {
           <Paper style={{ height: '100%', padding: '20px' }}>
 
             <Typography variant="h6">Community</Typography>
-            <FontAwesomeIcon icon={faThumbsUp} size='m' color='#f7e30e' style={{ fontSize: '3em' }} />
+            <FontAwesomeIcon icon={faThumbsUp} size='lg' color='#f7e30e' style={{ fontSize: '3em' }} />
             <Typography variant="body1">We hold motorcycle rides, brunches, auctions, and other events each year. Everything we do comes with the help and support of local businesses and community organizations that we appreciate so much.</Typography>
 
           </Paper>
@@ -71,9 +72,9 @@ const Main = () => {
 
 
         <Grid item xs={12}>
-          <Paper style={{ padding: '20px', textAlign: 'center' }}>
+          <Paper style={{ padding: '20px', textAlign: 'center'}}>
             <Typography variant='h3'>About us</Typography>
-            <img src="img/joey.jpg" height={450} alt='Joey Doolittle' style={{width:'100%', height:'100%', objectFit:'contain', scale:'0.5'}} />
+            <Image src="/img/joey.jpg" alt='Joey Doolittle' width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} />
 
             <Typography variant='body1'>JTB was founded by our son, Joey Doolittle.  Joey was a lifelong cancer warrior who was diagnosed with Rhabdomyosarcoma at only 3 months of age.
               Throughout Joey's life, he underwent numerous chemotherapy protocols, surgeries, and radiation treatments.

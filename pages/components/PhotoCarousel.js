@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react';
+import Image from 'next/image';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
@@ -21,7 +22,7 @@ const PhotoCarousel = ({ images }) => {
             >
                 {images.map((image, index) => (
                     <div key={index}>
-                        <img src={image} alt={`Slide ${index}`} style={{width:'100%', height:'100%', objectFit:'cover'}}/>
+                        <Image src={image} alt={`Slide ${index}`} width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }}/>
                     </div>
                 ))}
             </Carousel>
