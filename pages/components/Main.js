@@ -77,15 +77,20 @@ const Main = () => {
             <Image src="/img/joey.jpg" alt='Joey Doolittle' width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} />
 
             <Typography variant='body1'>JTB was founded by our son, Joey Doolittle.  Joey was a lifelong cancer warrior who was diagnosed with Rhabdomyosarcoma at only 3 months of age.
-              Throughout Joey's life, he underwent numerous chemotherapy protocols, surgeries, and radiation treatments.
+              Throughout Joey&apos;s life, he underwent numerous chemotherapy protocols, surgeries, and radiation treatments.
               Toys provided by the hospitals always seemed to make his treatments a little more bearable.
-              During the twilight of Joey's young life, when he was the sickest, he decided to conduct a fundraiser to raise money to buy the other kids at the hospital toys.
-              On June 7, 2008, Joey raised $1,800 by organizing a "cycle-a-thon" at a local gym in Peachtree City, GA.
-              A few days later, Joey made his first and only delivery of toys to the AFLAC Children's Cancer Center at Scottish Rite hospital in Atlanta.
-              On July 4, 2008, after a lifetime battle against cancer, Joey peacefully passed away in his mother's arms.</Typography>
+              During the twilight of Joey&apos;s young life, when he was the sickest, he decided to conduct a fundraiser to raise money to buy the other kids at the hospital toys.
+              On June 7, 2008, Joey raised $1,800 by organizing a &lsquo;cycle-a-thon&rsquo; at a local gym in Peachtree City, GA.
+              A few days later, Joey made his first and only delivery of toys to the AFLAC Children&apos;s Cancer Center at Scottish Rite hospital in Atlanta.
+              On July 4, 2008, after a lifetime battle against cancer, Joey peacefully passed away in his mother&apos;s arms.</Typography>
             <br/>
             <Typography variant='body1'>
-              Joey's impact on his family, friends, and other childhood cancer patients continues to evolve and flourish.  His simple dream of helping the other kids and their families continues to live on because of the incredible community of volunteers that have felt Joey in their hearts.  With no paid employees, we are a 100% volunteer army dedicated to the JTB mission.  We operate this way so that we can put every dollar towards helping these kids and their families.  We have dedicated ourselves to being good stewards of the money, time, and efforts of our volunteer community.  We will continue Joey's mission with the compassion and integrity that he had when he started it... simple as that.
+              Joey&apos;s impact on his family, friends, and other childhood cancer patients continues to evolve and flourish.  
+              His simple dream of helping the other kids and their families continues to live on because of the incredible community of volunteers that have felt Joey in their hearts.  
+              With no paid employees, we are a 100% volunteer army dedicated to the JTB mission.  
+              We operate this way so that we can put every dollar towards helping these kids and their families.  
+              We have dedicated ourselves to being good stewards of the money, time, and efforts of our volunteer community.  
+              We will continue Joey&apos;s mission with the compassion and integrity that he had when he started it... simple as that.
             </Typography>
           </Paper>
         </Grid>
