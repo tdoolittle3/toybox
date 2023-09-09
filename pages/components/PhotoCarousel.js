@@ -5,7 +5,12 @@ import Image from 'next/image';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-const PhotoCarousel = ({ images }) => {
+const PhotoCarousel = () => {
+    const images = [
+        '/img/cancer_center_joey.jpg',
+        '/img/jtbcrew.jpg',
+        '/img/toys.jpg'
+      ];
     return (
         <div className="carousel-container">
 
